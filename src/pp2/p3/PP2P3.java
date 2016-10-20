@@ -15,9 +15,9 @@ public class PP2P3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         int num,n;
         num = pedirNumero();
+        //El metodo Factorial analiza el numero
         n = Factorial(num);
         Mostrar(num,n);
     }
@@ -30,12 +30,15 @@ public class PP2P3 {
     }
     public static int Factorial(int num){
         int n = 1;
+        //Se acabara hasta que i llegue a 1
         for(int i=n; i>0; i--){
+            //En n se iran guardando las multiplicaciones de los divisores del numero
         n=n*i;   
         }
         return n;
     }
     public static void Mostrar(int num, int n){
         System.out.println("El factorial del número " +num +" es  " +n);
+        //num es el numero que le pedi y n es el resultado de las multiplaciones de sus divisiones
     }
 }
